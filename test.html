@@ -11,12 +11,12 @@
         let revenues = [1500,2800,1200,-500,3200];
 
         let total = revenues.every((element, index) => element >= 500);
-        let rice = orders.some((element,index) => element < 0);
+        let rice = revenues.some((element,index) => element < 0);
 
         console.log(total);
         console.log(rice);
 
-        let netProfits = revenues.map((element, index) => element * 0,9);
+        let netProfits = revenues.map((element, index) => element * 0.9);
         console.log(netProfits);
     </script>
 </body>
